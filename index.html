@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAYAL BHATIYA 2017</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(0, 140, 255, 0.22), transparent 35%),
+        linear-gradient(145deg, #020611, #061426, #01050d);
+      overflow-x: hidden;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 390px;
+      position: relative;
+      padding: 22px 17px 18px;
+      text-align: center;
+      border: 1px solid rgba(0, 174, 255, 0.75);
+      border-radius: 22px;
+      background: linear-gradient(
+        145deg,
+        rgba(5, 19, 38, 0.96),
+        rgba(1, 8, 20, 0.97)
+      );
+      box-shadow:
+        0 0 10px rgba(0, 174, 255, 0.55),
+        0 0 28px rgba(0, 119, 255, 0.25),
+        inset 0 0 22px rgba(0, 140, 255, 0.08);
+    }
+
+    /* Extra glowing border */
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: -3px;
+      border-radius: 24px;
+      border: 1px solid rgba(0, 204, 255, 0.25);
+      pointer-events: none;
+      animation: borderGlow 2.5s ease-in-out infinite;
+    }
+
+    @keyframes borderGlow {
+      0%, 100% {
+        box-shadow: 0 0 5px rgba(0, 174, 255, 0.2);
+      }
+      50% {
+        box-shadow:
+          0 0 15px rgba(0, 174, 255, 0.55),
+          0 0 28px rgba(0, 119, 255, 0.25);
+      }
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(0, 183, 255, 0.9);
+      box-shadow:
+        0 0 10px rgba(0, 183, 255, 0.8),
+        0 0 25px rgba(0, 120, 255, 0.4);
+      margin-bottom: 13px;
+      animation: logoFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes logoFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    h1 {
+      font-size: 25px;
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+      margin-bottom: 10px;
+      text-shadow:
+        0 0 8px rgba(0, 174, 255, 0.75),
+        0 0 18px rgba(0, 119, 255, 0.35);
+    }
+
+    .tagline {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #dcefff;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .countdown {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 195, 255, 0.65);
+      background: rgba(0, 126, 255, 0.10);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      box-shadow: 0 0 12px rgba(0, 160, 255, 0.25);
+    }
+
+    .countdown span {
+      color: #31c8ff;
+      font-size: 16px;
+    }
+
+    .join-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      width: 100%;
+      min-height: 50px;
+      padding: 13px 18px;
+      border-radius: 13px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 0.2px;
+      background: linear-gradient(135deg, #008cff, #0066e8);
+      border: 1px solid rgba(255,255,255,0.25);
+      box-shadow:
+        0 0 12px rgba(0, 140, 255, 0.65),
+        0 8px 22px rgba(0, 72, 180, 0.25);
+      animation: buttonFloat 2.2s ease-in-out infinite;
+      transition: transform 0.2s ease;
+    }
+
+    .join-btn:active {
+      transform: scale(0.97);
+    }
+
+    .telegram-icon {
+      width: 23px;
+      height: 23px;
+      fill: #fff;
+      flex-shrink: 0;
+    }
+
+    @keyframes buttonFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-4px);
+      }
+    }
+
+    .disclaimer {
+      margin-top: 16px;
+      padding: 11px 10px;
+      border-radius: 11px;
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(255,255,255,0.09);
+      color: #aebed0;
+      font-size: 10.5px;
+      line-height: 1.55;
+    }
+
+    .ads {
+      margin-top: 13px;
+      font-size: 11px;
+      color: #91a8bd;
+    }
+
+    .ads a {
+      color: #27bfff;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    @media (max-width: 360px) {
+      .page {
+        padding: 19px 14px 16px;
+      }
+
+      .logo {
+        width: 78px;
+        height: 78px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .tagline {
+        font-size: 12px;
+      }
+
+      .join-btn {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <img src="logo.jpg" alt="PAYAL BHATIYA 2017" class="logo">
+
+    <h1>PAYAL BHATIYA 2017</h1>
+
+    <p class="tagline">
+      Accurate analysis • Match Update · Right Pred!ction
+    </p>
+
+    <div class="countdown">
+      FREE JOINING ENDS IN <span id="timer">30</span>s
+    </div>
+
+    <a
+      class="join-btn"
+      href="https://t.me/+WgEY-6aJeGtkYzU1"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg class="telegram-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21.7 3.3c.3-1.1-.4-1.6-1.4-1.2L2.4 9.1c-1.2.5-1.2 1.2-.2 1.5l4.6 1.4 1.7 5.3c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.2-2.1 4.6 3.4c.9.5 1.5.3 1.7-.8l3-14.8zM8.4 11.5l9.9-6.2c.5-.3.9-.1.5.2l-8 7.2-.3 3.4-2.1-4.6z"/>
+      </svg>
+      JOIN TELEGRAM NOW
+    </a>
+
+    <div class="disclaimer">
+      This channel shares cricket updates, analysis, and general
+      information for fans. It does not promote betting or gambling.
+      No outcomes are guaranteed. Please verify independently and act responsibly.
+    </div>
+
+    <div class="ads">
+      Ads By
+      <a href="https://t.me/+4I3Ss-TD1hI5NGE1" target="_blank" rel="noopener noreferrer">
+        @PrinceAds9xz
+      </a>
+    </div>
+
+  </main>
+
+  <script>
+    // 30-second looping countdown — no tracking/event code
+    let time = 30;
+    const timer = document.getElementById("timer");
+
+    setInterval(() => {
+      time--;
+
+      if (time < 1) {
+        time = 30;
+      }
+
+      timer.textContent = time;
+    }, 1000);
+  </script>
+
+</body>
+  </html>
