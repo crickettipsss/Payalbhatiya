@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050b0a">
+<title>PAYAL BHATIYA (2017)</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;padding:16px 12px;
+  display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse at top,#12382b 0%,#07120f 48%,#020605 100%);
+  color:#fff;font-family:Arial,Helvetica,sans-serif;
+}
+.card{
+  width:100%;max-width:355px;text-align:center;
+  padding:22px 17px 16px;border-radius:20px;
+  background:linear-gradient(160deg,#10251d,#07110e 65%,#101d17);
+  border:1px solid #45ff9b;
+  box-shadow:0 0 8px #22ff8844,0 0 24px #00ff7730,
+             inset 0 0 18px #23ff8010;
+  position:relative;overflow:hidden;
+}
+.card:before{
+  content:"";position:absolute;inset:0;border-radius:20px;
+  padding:1px;background:linear-gradient(135deg,#68ffad,#263c32,#b5ff47,#1cff9b);
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;
+  pointer-events:none;
+}
+.logo{
+  width:91px;height:91px;object-fit:cover;border-radius:50%;
+  border:2px solid #5dffad;padding:3px;
+  box-shadow:0 0 15px #00ff8866;
+  animation:float 3s ease-in-out infinite;
+}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+h1{
+  font-size:23px;margin:14px 0 8px;font-weight:900;
+  letter-spacing:.4px;color:#fff;text-shadow:0 0 12px #36ff9a66;
+}
+.subtitle{font-size:12px;line-height:1.6;color:#c8e8d6;margin:0 0 15px}
+.line{height:1px;background:linear-gradient(90deg,transparent,#46ff9b,transparent);margin:13px 0}
+.timer{
+  color:#ffe36a;font-size:12px;font-weight:900;letter-spacing:.5px;
+  margin:13px 0;
+}
+.timer span{display:inline-block;min-width:22px}
+.join{
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  width:100%;padding:14px 8px;border-radius:11px;
+  color:#062113;text-decoration:none;font-size:15px;font-weight:900;
+  background:linear-gradient(100deg,#a8ff54,#31ff9b,#b7ff5b);
+  border:1px solid #d5ffad;
+  box-shadow:0 0 16px #31ff9b55;
+  animation:buttonFloat 2.5s ease-in-out infinite;
+}
+@keyframes buttonFloat{0%,100%{transform:translateY(0);box-shadow:0 0 12px #31ff9b44}50%{transform:translateY(-3px);box-shadow:0 0 22px #31ff9b88}}
+.join svg{width:22px;height:22px;fill:currentColor;flex-shrink:0}
+.note{
+  margin:15px 0 0;padding:10px;border-radius:9px;
+  background:#ffffff06;border:1px solid #ffffff16;
+  font-size:10px;line-height:1.6;color:#b9c9bf;
+}
+.ads{margin-top:14px;font-size:11px;color:#a9c8b5}
+.ads a{color:#6effad;font-weight:bold;text-decoration:none}
+.footer{font-size:9px;color:#71867a;margin-top:10px}
+</style>
+</head>
+
+<body>
+<main class="card">
+  <img class="logo" src="logo.jpg" alt="PAYAL BHATIYA Logo">
+
+  <h1>PAYAL BHATIYA (2017)</h1>
+  <p class="subtitle">Accurate analysis • Match Update · Right Pred!ction</p>
+
+  <div class="line"></div>
+
+  <div class="timer">
+    FREE JOINING ENDS IN <span id="count">30</span>s
+  </div>
+
+  <a class="join"
+     href="https://t.me/+dE9_iBBHLWo1MTA1"
+     target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M21.8 3.2 18.6 20c-.2 1.2-.9 1.5-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6 13.5l-4.9-1.6c-1.1-.4-1.1-1.1.2-1.6L20.4 2c1-.4 1.8.2 1.4 1.2ZM9.2 15.4l-.3 3.4 2.1-2.1-1.8-1.3Z"/>
+    </svg>
+    JOIN TELEGRAM NOW
+  </a>
+
+  <div class="note">
+    <strong>DISCLAIMER</strong><br>
+    This channel shares cricket updates, analysis, and general information for fans.
+    It does not promote betting or gambling. No outcomes are guaranteed.
+    Please verify independently and act responsibly.
+  </div>
+
+  <div class="ads">
+    Ads By
+    <a href="https://t.me/+4I3Ss-TD1hI5NGE1"
+       target="_blank" rel="noopener noreferrer">@PrinceAds9xz</a>
+  </div>
+
+  <div class="footer">CRICKET UPDATES • ANALYSIS • INFORMATION</div>
+</main>
+
+<script>
+let seconds = 30;
+const count = document.getElementById("count");
+
+setInterval(() => {
+  seconds--;
+  if (seconds < 0) seconds = 30;
+  count.textContent = seconds;
+}, 1000);
+</script>
+</body>
+</html>
+
